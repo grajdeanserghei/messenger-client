@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using Messenger.Client.Objects.NlpEntities;
 using Newtonsoft.Json;
 
 namespace Messenger.Client.Objects
@@ -19,6 +20,8 @@ namespace Messenger.Client.Objects
 
         [JsonProperty("quick_reply")]
         public MessengerQuickReplyPayload QuickReply { get; set; }
+
+        public Nlp Nlp { get; set; }
 
     }
 }
